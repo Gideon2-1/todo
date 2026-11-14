@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gideons Restaurant - Festive Order & Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <div class="header">
+    <h1>🥘 The Gideons Restaurant</h1>
+    <p>Festive Order & Checkout • Party Rice • Family Feast • Holiday Trays</p>
+  </div>
+  <div class="green-bar">🎄 DECEMBER FESTIVE SEASON • BULK DISCOUNT APPLIES AUTOMATICALLY 🎄</div>
+
+  <div class="form">
+    <label for="mealPrice">1. Meal Package Price (₦)</label>
+    <input type="number" id="mealPrice" min="8500" placeholder="Minimum ₦8,500">
+    <div class="hint">Minimum price is ₦8,500. Example: Party Rice & Turkey Pack = ₦8,500 • Family Feast Tray = ₦28,000</div>
+
+    <label for="qty">2. Number of Packs / Portions</label>
+    <input type="number" id="qty" min="1" value="1">
+
+    <label for="zone">3. Delivery Zone Selection</label>
+    <select id="zone">
+      <option value="0">Restaurant Pickup / Dine-in (Free - ₦0)</option>
+      <option value="1000">Local Delivery / Within Town (+₦1,000)</option>
+      <option value="2500">Outskirts / Express Holiday Delivery (+₦2,500)</option>
+    </select>
+
+    <label for="promo">4. Festive Promo Voucher</label>
+    <input type="text" id="promo" placeholder="e.g. XMASFEAST">
+    <div class="hint">Try: <b>XMASFEAST</b> or <b>NEWYEAR2027</b> for extra -₦1,500 off</div>
+
+    <div class="btn-row">
+      <button id="calcBtn" type="button">Calculate Bill</button>
+      <button id="clearBtn" type="button">Clear Order</button>
+    </div>
+
+    <div class="examples">
+      <b>How Discount Works:</b><br>
+      - Subtotal ₦40,000 and above → <b>10% Holiday Bulk Discount</b><br>
+      - Subtotal ₦20,000 - ₦39,999 → <b>5% Festive Discount</b><br>
+      - Below ₦20,000 → <b>Standard Price (No Discount)</b><br>
+      - Promo Code → <b>Extra -₦1,500 flat</b><br>
+      - Minimum Meal Price → <b>₦8,500</b>
+    </div>
+
+    <div id="receipt">
+      <h3>🧾 THE GIDEONS RESTAURANT - BILL RECEIPT</h3>
+      <div class="order-id" id="receiptOrderId">Order ID: -</div>
+      <div class="line"><span>Meal Price (per pack)</span><span id="rPrice">₦0</span></div>
+      <div class="line"><span>Number of Packs</span><span id="rQty">0</span></div>
+      <div class="line"><span>Subtotal (Price × Qty)</span><span id="rSubtotal">₦0</span></div>
+      <div class="line"><span>Festive Bulk Discount</span><span class="discount" id="rBulk">- ₦0</span></div>
+      <div class="line"><span>Discount Status</span><span id="rStatus">Standard Price</span></div>
+      <div class="line"><span>Promo Code (<span id="rPromoCode">None</span>)</span><span class="discount" id="rPromo">- ₦0</span></div>
+      <div class="line"><span>Delivery Fee (<span id="rZone">Pickup</span>)</span><span id="rDelivery">₦0</span></div>
+      <div class="line total"><span>Final Payable</span><span id="rTotal">₦0</span></div>
+      <div class="saved">✅ Order saved in localStorage - Refresh page, your bill stays!</div>
+    </div>
+  </div>
+
+  <!-- CONTACT BOX -->
+  <div class="contact-box">
+    <h3>📞 Need Help? Contact The Gideons Restaurant</h3>
+    <p>Any issues with your order? Reach us directly:</p>
+    <p>📱 <a href="tel:08128029587">0812 802 9587</a> &nbsp; | &nbsp; 📱 <a href="tel:08109959449">0810 995 9449</a></p>
+    <p>📧 <a href="mailto:festiverestaurantcheckout@gmail.com">festiverestaurantcheckout@gmail.com</a></p>
+    <p class="small">We reply fast for December festive orders!</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

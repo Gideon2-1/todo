@@ -1,0 +1,32 @@
+*{box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{margin:0;background:#fdf6ec;padding:16px;color:#222}
+.card{max-width:520px;margin:auto;background:white;border:2px solid #d4af37;border-radius:16px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.12)}
+.header{background:#b02a37;color:white;padding:20px;text-align:center}
+.header h1{margin:0;font-size:24px}
+.header p{margin:6px 0 0;font-size:13px;opacity:.9}
+.green-bar{background:#146c43;color:white;text-align:center;padding:8px;font-size:12px;font-weight:bold;letter-spacing:1px}
+.form{padding:18px}
+label{display:block;font-weight:700;font-size:13px;margin:14px 0 5px;color:#146c43}
+input,select{width:100%;padding:12px;border:1.5px solid #ddd;border-radius:10px;font-size:15px}
+input:focus,select:focus{outline:none;border-color:#b02a37}
+.hint{font-size:12px;color:#777;margin-top:4px}
+.btn-row{display:flex;gap:10px;margin-top:18px}
+button{flex:1;padding:13px;border:0;border-radius:10px;font-weight:bold;font-size:15px;cursor:pointer}
+#calcBtn{background:#146c43;color:white}
+#calcBtn:hover{background:#0f5434}
+#clearBtn{background:#f8d7da;color:#b02a37;border:1px solid #f5c6cb}
+#receipt{display:none;margin-top:18px;border:2px dashed #d4af37;border-radius:12px;padding:16px;background:#fffdf5}
+#receipt h3{text-align:center;margin:0 0 4px;color:#b02a37;font-size:16px}
+#receipt .order-id{text-align:center;font-size:12px;color:#888;margin-bottom:12px}
+.line{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #eee;font-size:14px}
+.line.total{border:none;border-top:2px solid #146c43;margin-top:8px;padding-top:10px;font-size:18px;font-weight:bold;color:#146c43}
+.discount{color:#b02a37}
+.saved{margin-top:10px;text-align:center;font-size:11px;color:#146c43;background:#e8f5e9;padding:7px;border-radius:20px}
+.examples{background:#fff3cd;border:1px solid #ffe69c;padding:10px;border-radius:10px;font-size:12px;margin-top:14px;line-height:1.6}
+.examples b{color:#b02a37}
+.contact-box{background:#146c43;color:white;text-align:center;padding:16px;border-top:3px solid #d4af37}
+.contact-box h3{margin:0 0 8px;font-size:16px}
+.contact-box p{margin:5px 0;font-size:14px}
+.contact-box a{color:#ffe69c;font-weight:bold;text-decoration:none}
+.contact-box a:hover{text-decoration:underline}
+.contact-box .small{font-size:12px;opacity:.85}
